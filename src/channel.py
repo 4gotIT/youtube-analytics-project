@@ -8,7 +8,7 @@ from helper.youtube_api_manual import youtube
 
 class Channel:
     """Класс для ютуб-канала"""
-    api_key: str = os.getenv('AIzaSyDxVxHK2libki_yT44Wc__Ikjsta-XwnPQ')
+    api_key: str = os.getenv('YOUTUBE_API_KEY')
     youtube = build('youtube', 'v3', developerKey=api_key)
 
     def __init__(self, channel_id: str) -> None:
